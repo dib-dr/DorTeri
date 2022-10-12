@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+cd $HOME/DorTeri
+git pull
+clear
+php main.php
