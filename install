@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+cd $HOME/DorTeri
+mv -f gas $HOME
+cd $HOME
+chmod +x gas
+./gas
