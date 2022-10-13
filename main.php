@@ -95,6 +95,7 @@ echo "$hacak    .___               __         .__
 \____ |\____/|__|     |__|  |__|  |__|
      \/                               \n";
 echo "$W Tembak Paket 3 by$R OpakEnak,$W Remod by$B dedd\n\n";
+echo "$B Login untuk masuk kedalam menu\n";
 echo "$Y [•] Nomer\t = $G";
 $nomor = trim(fgets(STDIN));
 $login = login($nomor);
@@ -132,7 +133,9 @@ $Y [10] (NEW) 55GB 30 Hari\t × \t $G Rp.50000
 $Y [11] (NEW) 65GB 30 Hari\t × \t $G Rp.60000
 $Y [12] (NEW) 75GB 30 Hari\t × \t $G Rp.75000
 $Y [13] (NEW) 90GB 30 Hari\t × \t $G Rp.90000
-$Y [14] (NEW) 100GB 30 Hari\t × \t $G Rp.90000\n";
+$Y [14] (NEW) 100GB 30 Hari\t × \t $G Rp.90000
+$Y [15] (NEW) 1.5GB 1 Hari\t × \t $G Rp.3000
+$Y [16] 5GB 24 Jam 1 Hari\t × \t $G Rp.90000\n";
     echo "\n$B [•] Pilih  :   ";
     $pilih = trim(fgets(STDIN));
     switch ($pilih) {
@@ -178,7 +181,12 @@ $Y [14] (NEW) 100GB 30 Hari\t × \t $G Rp.90000\n";
             case '14':
             $prodid = '25693';
             break;
-        
+            case '15':
+            $prodid = '23578';
+            break;
+            case '16':
+            $prodid = '23323';
+            break;
         default:
             echo "$R [×] Pilih Paket Sesuai Menu\n";
             goto cek;
