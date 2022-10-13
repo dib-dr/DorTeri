@@ -104,8 +104,8 @@ $otp = trim(fgets(STDIN));
 $login = otplogin($nomor,$otp);
 echo "\n Informasi Pengguna \n";
 if (strpos(json_encode($login), '"status":true')) {
-	$secret = $login['secretKey'];
-	$plan = $login['callPlan'];
+    $secret = $login['secretKey'];
+    $plan = $login['callPlan'];
     $nomor = $login['msisdn'];
     $profil = profil($nomor,$plan,$secret);
     $balance = $profil['creditBalance'];
@@ -113,7 +113,7 @@ if (strpos(json_encode($login), '"status":true')) {
     $sisakuota = $profil['sumOfInternet'];
     $poin = $profil['stotalPoin'];
     echo "$Y [•] Pulsa\t : $G $balance\n";
-	echo "$Y [•] Masa Aktif\t : $G $aktif\n";
+    echo "$Y [•] Masa Aktif\t : $G $aktif\n";
     echo "$Y [•] Sisa Data\t : $G $sisakuota\n";
     echo "$Y [•] Bonstri\t : $G $poin Poin\n\n";
     cek:
@@ -188,6 +188,7 @@ $Y [14] (NEW) 100GB 30 Hari\t × \t $G Rp.90000\n";
     $name = $cek['product']['productName'];
     $price = $cek['product']['productPrice'];
     $deskripsi = $cek['product']['productDescription'];
+    echo "\n $B Informasi Paket \n";
     echo "$B [•] Nama Paket\t: $G $name\n";
     echo "$B [•] Harga\t: $G $price\n";
     echo "$B [•] Deskripsi\t: $G $deskripsi\n";
