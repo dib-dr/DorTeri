@@ -93,7 +93,8 @@ echo "$hacak    .___               __         .__
  / __ |/  _ \_  __ \ \   __\_  __ \  |
 / /_/ (  <_> )  | \/  |  |  |  | \/  |
 \____ |\____/|__|     |__|  |__|  |__|
-     \/                               \n\n";
+     \/                               \n";
+echo "$W Tembak Paket 3 by$R OpakEnak,$W Remod by$B dedd\n\n";
 echo "$Y [•] Nomer\t = $G";
 $nomor = trim(fgets(STDIN));
 $login = login($nomor);
@@ -116,21 +117,22 @@ if (strpos(json_encode($login), '"status":true')) {
     echo "$Y [•] Bonstri\t: $G $poin Poin\n\n";
     cek:
     echo "$Y [?] Pilih Paket :\n";
-    echo "$Y [1] Welcome Reward 5GB\t : \t $G Rp.1\n
-$Y [2] 25GB 24 Jam 30 Hari\t : \t $G Rp.29000\n
-$Y [3] 25GB 25rb (Diskon)\t : \t $G Rp.25000\n
-$Y [4] 25GB 24 Jam 20 Hari\t : \t $G Rp.25000\n
-$Y [5] (NEW) 10GB 30 Hari\t : \t $G Rp.15000\n
-$Y [6] (NEW) 15GB 30 Hari\t : \t $G Rp.20000\n
-$Y [7] (NEW) 25GB 20 Hari\t : \t $G Rp.25000\n
-$Y [8] (NEW) 25GB 20 Hari\t : \t $G Rp.25000\n
-$Y [9] (NEW) 25GB 30 Hari\t : \t $G Rp.29000\n
-$Y [10] (NEW) 55GB 30 Hari\t : \ $G tRp.50000\n
-$Y [11] (NEW) 65GB 30 Hari\t : \t $G Rp.60000\n
-$Y [12] (NEW) 75GB 30 Hari\t : \t $G Rp.75000\n
-$Y [13] (NEW) 90GB 30 Hari\t : \t $G Rp.90000\n
-$Y [14] (NEW) 100GB 30 Hari\t : \t$G Rp.90000\n";
-    echo "Pilih\t : \t";
+    echo "
+$Y [1]  Welcome Reward 5GB\t × \t $G Rp.1
+$Y [2]  25GB 24 Jam 30 Hari\t × \t $G Rp.29000
+$Y [3]  25GB 25rb (Diskon)\t × \t $G Rp.25000
+$Y [4]  25GB 24 Jam 20 Hari\t × \t $G Rp.25000
+$Y [5]  (NEW) 10GB 30 Hari\t × \t $G Rp.15000
+$Y [6]  (NEW) 15GB 30 Hari\t × \t $G Rp.20000
+$Y [7]  (NEW) 25GB 20 Hari\t × \t $G Rp.25000
+$Y [8]  (NEW) 25GB 20 Hari\t × \t $G Rp.25000
+$Y [9]  (NEW) 25GB 30 Hari\t × \t $G Rp.29000
+$Y [10] (NEW) 55GB 30 Hari\t × \t $G Rp.50000
+$Y [11] (NEW) 65GB 30 Hari\t × \t $G Rp.60000
+$Y [12] (NEW) 75GB 30 Hari\t × \t $G Rp.75000
+$Y [13] (NEW) 90GB 30 Hari\t × \t $G Rp.90000
+$Y [14] (NEW) 100GB 30 Hari\t × \t $G Rp.90000\n";
+    echo "\n [•] Pilih  :   ";
     $pilih = trim(fgets(STDIN));
     switch ($pilih) {
             case '1':
@@ -184,7 +186,7 @@ $Y [14] (NEW) 100GB 30 Hari\t : \t$G Rp.90000\n";
     $cek = cek($prodid);
     $name = $cek['product']['productName'];
     $price = $cek['product']['productPrice'];
-    $deskripsi = $cek['product']['productDescription'];
+    $deskripsi = $cek['product']."$B [√] ".['productDescription'];
     echo "$B [•] Nama Paket\t: $G$name\n";
     echo "$B [•] Harga\t: $G $price\n";
     echo "$B [•] Deskripsi\t: $G $deskripsi\n";
