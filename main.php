@@ -102,6 +102,7 @@ echo "$B [×] ".$login['message'];
 echo "\n$Y [•] OTP\t = $G";
 $otp = trim(fgets(STDIN));
 $login = otplogin($nomor,$otp);
+echo "\n Informasi Pengguna";
 if (strpos(json_encode($login), '"status":true')) {
 	$secret = $login['secretKey'];
 	$plan = $login['callPlan'];
@@ -186,7 +187,7 @@ $Y [14] (NEW) 100GB 30 Hari\t × \t $G Rp.90000\n";
     $cek = cek($prodid);
     $name = $cek['product']['productName'];
     $price = $cek['product']['productPrice'];
-    $deskripsi = $cek['product']."$B [√] ".['productDescription'];
+    $deskripsi = $cek['product']['productDescription'];
     echo "$B [•] Nama Paket\t: $G$name\n";
     echo "$B [•] Harga\t: $G $price\n";
     echo "$B [•] Deskripsi\t: $G $deskripsi\n";
