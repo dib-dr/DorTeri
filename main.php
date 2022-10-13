@@ -188,7 +188,7 @@ $Y [14] (NEW) 100GB 30 Hari\t × \t $G Rp.90000\n";
     $name = $cek['product']['productName'];
     $price = $cek['product']['productPrice'];
     $deskripsi = $cek['product']['productDescription'];
-    echo "$B [•] Nama Paket\t: $G$name\n";
+    echo "$B [•] Nama Paket\t: $G $name\n";
     echo "$B [•] Harga\t: $G $price\n";
     echo "$B [•] Deskripsi\t: $G $deskripsi\n";
     echo "$B [?] Lanjut ? (y/n) : ";
