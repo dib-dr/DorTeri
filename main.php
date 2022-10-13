@@ -135,7 +135,7 @@ $Y [12] (NEW) 75GB 30 Hari\t × \t $G Rp.75000
 $Y [13] (NEW) 90GB 30 Hari\t × \t $G Rp.90000
 $Y [14] (NEW) 100GB 30 Hari\t × \t $G Rp.90000
 $Y [15] (NEW) 1.5GB 1 Hari\t × \t $G Rp.3000
-$Y [16] 5GB 24 Jam 1 Hari\t × \t $G Rp.5000\n";
+$Y [16] 5GB 24 Jam 1 Hari \t × \t $G Rp.5000\n";
     echo "\n$B [•] Pilih  :   ";
     $pilih = trim(fgets(STDIN));
     switch ($pilih) {
