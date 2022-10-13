@@ -117,7 +117,7 @@ if (strpos(json_encode($login), '"status":true')) {
     echo "$Y [•] Sisa Data\t : $G $sisakuota\n";
     echo "$Y [•] Bonstri\t : $G $poin Poin\n\n";
     cek:
-    echo "$Y [?] Pilih Paket : ";
+    echo "$B [+] Pilih Paket : ";
     echo "
 $Y [1]  Welcome Reward 5GB\t × \t $G Rp.1
 $Y [2]  25GB 24 Jam 30 Hari\t × \t $G Rp.29000
