@@ -115,7 +115,7 @@ if (strpos(json_encode($login), '"status":true')) {
     echo "$Y [•] Pulsa\t : $G $balance\n";
 	echo "$Y [•] Masa Aktif\t : $G $aktif\n";
     echo "$Y [•] Sisa Data\t : $G $sisakuota\n";
-    echo "$Y [•] Bonstri\t: $G $poin Poin\n\n";
+    echo "$Y [•] Bonstri\t : $G $poin Poin\n\n";
     cek:
     echo "$Y [?] Pilih Paket :\n";
     echo "
