@@ -199,7 +199,7 @@ $Y [16] 5GB 24 Jam 1 Hari \t × \t $G Rp.5000\n";
     echo "\n$B Informasi Paket \n";
     echo "$Y [•] Nama Paket\t: $G $name\n";
     echo "$Y [•] Harga\t: $G $price\n\n";
-    echo "$Y Deskripsi Paket \n";
+    echo "$B Deskripsi Paket \n";
     echo "$P $deskripsi\n";
     echo "\n$B [?] Lanjut ? (y/n) : ";
     $aa = trim(fgets(STDIN));
@@ -208,7 +208,7 @@ $Y [16] 5GB 24 Jam 1 Hari \t × \t $G Rp.5000\n";
     }
     $beli = beli($nomor,$plan,$secret,$prodid);
     if ($beli['status'] == true) {
-        echo "\n$G [✓] Sukses Membeli Paket\n";
+        echo "$G [✓] Sukses Membeli Paket\n";
     } else {
         echo "$R [×] Gagal Membeli Paket .! \n";
     }
