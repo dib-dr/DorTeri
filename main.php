@@ -102,7 +102,7 @@ echo "$B [×] ".$login['message'];
 echo "\n$Y [•] OTP\t = $G";
 $otp = trim(fgets(STDIN));
 $login = otplogin($nomor,$otp);
-echo "\n Informasi Pengguna \n";
+echo "\n$B Informasi Pengguna \n";
 if (strpos(json_encode($login), '"status":true')) {
     $secret = $login['secretKey'];
     $plan = $login['callPlan'];
@@ -117,7 +117,7 @@ if (strpos(json_encode($login), '"status":true')) {
     echo "$Y [•] Sisa Data\t : $G $sisakuota\n";
     echo "$Y [•] Bonstri\t : $G $poin Poin\n\n";
     cek:
-    echo "$B [+] Pilih Paket : ";
+    echo "$B List Harga Paket : ";
     echo "
 $Y [1]  Welcome Reward 5GB\t × \t $G Rp.1
 $Y [2]  25GB 24 Jam 30 Hari\t × \t $G Rp.29000
@@ -133,7 +133,7 @@ $Y [11] (NEW) 65GB 30 Hari\t × \t $G Rp.60000
 $Y [12] (NEW) 75GB 30 Hari\t × \t $G Rp.75000
 $Y [13] (NEW) 90GB 30 Hari\t × \t $G Rp.90000
 $Y [14] (NEW) 100GB 30 Hari\t × \t $G Rp.90000\n";
-    echo "\n [•] Pilih  :   ";
+    echo "\n$B [•] Pilih  :   ";
     $pilih = trim(fgets(STDIN));
     switch ($pilih) {
             case '1':
@@ -189,10 +189,10 @@ $Y [14] (NEW) 100GB 30 Hari\t × \t $G Rp.90000\n";
     $price = $cek['product']['productPrice'];
     $deskripsi = $cek['product']['productDescription'];
     echo "\n $B Informasi Paket \n";
-    echo "$B [•] Nama Paket\t: $G $name\n";
-    echo "$B [•] Harga\t: $G $price\n\n";
-    echo "$B Deskripsi Paket";
-    echo "$P $deskripsi\n";
+    echo "$Y [•] Nama Paket\t: $G $name\n";
+    echo "$Y [•] Harga\t: $G $price\n\n";
+    echo "$Y Deskripsi Paket";
+    echo "$Y $deskripsi\n";
     echo "$B [?] Lanjut ? (y/n) : ";
     $aa = trim(fgets(STDIN));
     if(strtolower($aa) !== 'y') {
