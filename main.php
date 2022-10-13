@@ -190,8 +190,9 @@ $Y [14] (NEW) 100GB 30 Hari\t × \t $G Rp.90000\n";
     $deskripsi = $cek['product']['productDescription'];
     echo "\n $B Informasi Paket \n";
     echo "$B [•] Nama Paket\t: $G $name\n";
-    echo "$B [•] Harga\t: $G $price\n";
-    echo "$B [•] Deskripsi\t: $G $deskripsi\n";
+    echo "$B [•] Harga\t: $G $price\n\n";
+    echo "$B Deskripsi Paket";
+    echo "$P $deskripsi\n";
     echo "$B [?] Lanjut ? (y/n) : ";
     $aa = trim(fgets(STDIN));
     if(strtolower($aa) !== 'y') {
@@ -199,7 +200,7 @@ $Y [14] (NEW) 100GB 30 Hari\t × \t $G Rp.90000\n";
     }
     $beli = beli($nomor,$plan,$secret,$prodid);
     if ($beli['status'] == true) {
-        echo "$G [✓] Sukses Membeli Paket\n";
+        echo "\n$G [✓] Sukses Membeli Paket\n";
     } else {
         echo "$R [×] Gagal Membeli Paket .! \n";
     }
