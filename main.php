@@ -193,7 +193,7 @@ $Y [14] (NEW) 100GB 30 Hari\t × \t $G Rp.90000\n";
     echo "$Y [•] Harga\t: $G $price\n\n";
     echo "$Y Deskripsi Paket \n";
     echo "$P $deskripsi\n";
-    echo "$B [?] Lanjut ? (y/n) : ";
+    echo "\n$B [?] Lanjut ? (y/n) : ";
     $aa = trim(fgets(STDIN));
     if(strtolower($aa) !== 'y') {
         goto cek;
