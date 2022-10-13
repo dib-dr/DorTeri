@@ -102,7 +102,7 @@ echo "$B [×] ".$login['message'];
 echo "\n$Y [•] OTP\t = $G";
 $otp = trim(fgets(STDIN));
 $login = otplogin($nomor,$otp);
-echo "\n Informasi Pengguna";
+echo "\n Informasi Pengguna \n";
 if (strpos(json_encode($login), '"status":true')) {
 	$secret = $login['secretKey'];
 	$plan = $login['callPlan'];
