@@ -113,7 +113,7 @@ if (strpos(json_encode($login), '"status":true')) {
     $sisakuota = $profil['sumOfInternet'];
     $poin = $profil['stotalPoin'];
     echo "$Y [•] Pulsa\t : $G $balance\n";
-	echo "$Y [•] Masa Aktif\ t: $G $aktif\n";
+	echo "$Y [•] Masa Aktif\t : $G $aktif\n";
     echo "$Y [•] Sisa Data\t : $G $sisakuota\n";
     echo "$Y [•] Bonstri\t: $G $poin Poin\n\n";
     cek:
