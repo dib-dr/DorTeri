@@ -208,7 +208,7 @@ $var_e597838d20ca17a5d1c56894df5a3cb0 [16] 5GB 24 Jam 1 Hari \t × \t $var_348be
     }
     $var_38558582f42dd43bfac7f1214db266e4 = fn_061f2fa10c0566fa22d95d3f74f101c6($var_e0fe4b801c656617d025e07d1db38cb7,$var_ee9676f68821f1b0eac888572a25a69d,$var_591b1b086b5389b9563395c4cfb89f0a,$var_bc2f43670779bd40547ffe5d521d549c);
     if ($var_38558582f42dd43bfac7f1214db266e4['status'] == true) {
-        echo "$var_348be35272f53405e53b7b91b93d2d86 [&#10003;] Sukses Membeli Paket\n";
+        echo "$var_348be35272f53405e53b7b91b93d2d86 [✓] Sukses Membeli Paket\n";
     } else {
         echo "$var_f22a8f7c8f7402498b562f06c7b4c2da [×] Gagal Membeli Paket .! \n";
     }
